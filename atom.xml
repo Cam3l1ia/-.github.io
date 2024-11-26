@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-11-23T02:34:10.983Z</updated>
+  <updated>2024-11-26T09:33:42.865Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>evillimiter工具使用</title>
+    <link href="http://example.com/2024/11/26/evillimiter%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    <id>http://example.com/2024/11/26/evillimiter%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/</id>
+    <published>2024-11-26T09:09:01.000Z</published>
+    <updated>2024-11-26T09:33:42.865Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="evillimiter工具使用"><a href="#evillimiter工具使用" class="headerlink" title="evillimiter工具使用"></a>evillimiter工具使用</h1><p>最近在github上找到了一个好玩的小工具，可以用来扫描同一网络下的IP，并对其进行限速（在舍友打游戏的时候把他的网给断掉）</p><p>工具下载</p><p>1.可以在github中下载压缩包然后进行解压</p><p><code>[bitbrute/evillimiter: Tool that monitors, analyzes and limits the bandwidth of devices on the local network without administrative access.](https://github.com/bitbrute/evillimiter)</code></p><p>2.直接在github中克隆项目</p><p><code>git clone https://github.com/bitbrute/evillimiter.git</code></p><p>下载好工具中进入kali使用命令<code>cd evillimiter</code>进入目录，通过解压命令进行工具安装</p><p><code>sudo python3 setup.py install</code></p><p>安装好之后使用root账户打开工具<code>evillimiter</code></p><p><img src="/.com//blog/myblog/source/_posts/evillimiter工具使用/start.png"></p><p>至此，工具已经打开了，我们可以使用scan命令扫描当前网络下的IP设备</p><p><img src="/.com//blog\myblog\source_posts\evillimiter工具使用\scan.png"></p><p>不用在意warning报错，只要能扫描就是对的，扫描完成后使用hosts查看有哪些设备</p><p><img src="/.com//blog\myblog\source_posts\evillimiter工具使用\hosts.png"></p><p>然后我们即可通过limit命令来防止亲爱的室友们沉迷游戏，对其进行防沉迷</p><p><img src="/.com//blog\myblog\source_posts\evillimiter工具使用\limit.png"></p><p>其中limit为限速指令，1为hosts中的ID，1kbit为将网速限制为1kbit每秒，解除限速指令为free</p><p><img src="/.com//blog\myblog\source_posts\evillimiter工具使用\free.png"></p><p>至此，我们完成了简单的网络限速功能，使用quit即可退出程序，同时我们还可以使用其他指令来控制流量的上行和下行，确保在下载文件时舍友不会抢占带宽</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;evillimiter工具使用&quot;&gt;&lt;a href=&quot;#evillimiter工具使用&quot; class=&quot;headerlink&quot; title=&quot;evillimiter工具使用&quot;&gt;&lt;/a&gt;evillimiter工具使用&lt;/h1&gt;&lt;p&gt;最近在github上找到了一个好玩的</summary>
+      
+    
+    
+    
+    <category term="crypto" scheme="http://example.com/categories/crypto/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>RSAwinner</title>
@@ -44,7 +66,7 @@
     <published>2024-11-11T13:01:12.000Z</published>
     <updated>2024-11-16T13:10:00.898Z</updated>
     
-    <content type="html"><![CDATA[<p>这篇博客教程记录基本的Markdown语法，及图片的上传方法</p><h4 id="1-图片上传"><a href="#1-图片上传" class="headerlink" title="1.图片上传"></a>1.图片上传</h4><p>便于日常使用”<img src="/.com//%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84" alt="图片名称">“</p><h4 id="2-标题转换"><a href="#2-标题转换" class="headerlink" title="2.标题转换"></a>2.标题转换</h4><p>使用Ctrl+1234…进行一二三四级标题的更改</p><h4 id="3-段落"><a href="#3-段落" class="headerlink" title="3.段落"></a>3.段落</h4><p>尽量不要使用空格和制表符进行缩进，要检查文章最后是否存在空行</p><h4 id="4-强调语法"><a href="#4-强调语法" class="headerlink" title="4.强调语法"></a>4.强调语法</h4><p>加粗：在需要加粗的内容两侧使用两个※ <strong>包裹</strong></p><p>斜体：在服药斜体的内容两侧使用一个※<em>包裹</em></p><p>加粗&amp;斜体：使用三个※进行包裹，例如<em><strong>强调</strong></em></p><h4 id="5-链接语法"><a href="#5-链接语法" class="headerlink" title="5.链接语法"></a>5.链接语法</h4><p>超链接Markdown语法代码：<code>[超链接显示名](超链接地址 &quot;超链接title&quot;)</code></p><p>这是一个链接<a href="ctfer.cn">博客地址</a></p><p>也可以使用&lt;&gt;将URL及邮箱地址变为可点击</p><p><a href="mailto:&#51;&#x30;&#51;&#x34;&#x37;&#55;&#x32;&#53;&#x36;&#51;&#64;&#113;&#x71;&#46;&#99;&#x6f;&#109;">&#51;&#x30;&#51;&#x34;&#x37;&#55;&#x32;&#53;&#x36;&#51;&#64;&#113;&#x71;&#46;&#99;&#x6f;&#109;</a></p><h4 id="6-代码语法"><a href="#6-代码语法" class="headerlink" title="6.代码语法"></a>6.代码语法</h4><p>可以右键点击插入代码块</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(&quot;hello,world&quot;)</span><br></pre></td></tr></table></figure><p>也可以使用反引号&#96;进行包裹</p><p><code>print(&quot;hello&quot;)</code></p>]]></content>
+    <content type="html"><![CDATA[<p>这篇博客教程记录基本的Markdown语法，及图片的上传方法</p><h4 id="1-图片上传"><a href="#1-图片上传" class="headerlink" title="1.图片上传"></a>1.图片上传</h4><p>便于日常使用”<img src="/.com//%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84" alt="图片名称">“</p><h4 id="2-标题转换"><a href="#2-标题转换" class="headerlink" title="2.标题转换"></a>2.标题转换</h4><p>使用Ctrl+1234…进行一二三四级标题的更改</p><h4 id="3-段落"><a href="#3-段落" class="headerlink" title="3.段落"></a>3.段落</h4><p>尽量不要使用空格和制表符进行缩进，要检查文章最后是否存在空行</p><h4 id="4-强调语法"><a href="#4-强调语法" class="headerlink" title="4.强调语法"></a>4.强调语法</h4><p>加粗：在需要加粗的内容两侧使用两个※ <strong>包裹</strong></p><p>斜体：在服药斜体的内容两侧使用一个※<em>包裹</em></p><p>加粗&amp;斜体：使用三个※进行包裹，例如<em><strong>强调</strong></em></p><h4 id="5-链接语法"><a href="#5-链接语法" class="headerlink" title="5.链接语法"></a>5.链接语法</h4><p>超链接Markdown语法代码：<code>[超链接显示名](超链接地址 &quot;超链接title&quot;)</code></p><p>这是一个链接<a href="ctfer.cn">博客地址</a></p><p>也可以使用&lt;&gt;将URL及邮箱地址变为可点击</p><p><a href="mailto:&#51;&#48;&#51;&#x34;&#x37;&#x37;&#x32;&#53;&#x36;&#x33;&#64;&#x71;&#113;&#x2e;&#x63;&#111;&#x6d;">&#51;&#48;&#51;&#x34;&#x37;&#x37;&#x32;&#53;&#x36;&#x33;&#64;&#x71;&#113;&#x2e;&#x63;&#111;&#x6d;</a></p><h4 id="6-代码语法"><a href="#6-代码语法" class="headerlink" title="6.代码语法"></a>6.代码语法</h4><p>可以右键点击插入代码块</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(&quot;hello,world&quot;)</span><br></pre></td></tr></table></figure><p>也可以使用反引号&#96;进行包裹</p><p><code>print(&quot;hello&quot;)</code></p>]]></content>
     
     
       
