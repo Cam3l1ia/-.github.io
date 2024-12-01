@@ -7285,7 +7285,7 @@ to {
 }
 .highlight-wrap {
     position: relative;
-    background:#21252b;
+    background:#f7f7f7;
     border-radius:5px;
     font:15px/22px "Microsoft YaHei","Arial",Sans-Serif;
     line-height:1.6;
@@ -7321,8 +7321,8 @@ to {
     background-color:#21252b !important
 }
 .highlight-wrap code {
-    background:#f5f5f5;
-    color:#000;
+    background:#1d1f21;
+    color:#fff;
     word-break:break-word;
     font-family:'Source Code Pro',monospace,Helvetica,Tahoma,Arial,STXihei,"STHeiti Light","Microsoft YaHei",sans-serif;
     padding:2px;
